@@ -1,14 +1,14 @@
 // Function to get all y's and M's
 export function chineseLists(list_of_n_r) {
-    var array_y = new Array();
-    var array_M = new Array();
+    var array_y = [];
+    var array_M = [];
 
     for (var n_r of list_of_n_r) {
         var M = multipleAll(list_of_n_r) / n_r[0];
         array_M.push(M);
 
         var j = 1;
-        while ((M*j) % n_r[0] != 1) {
+        while ((M*j) % n_r[0] !== 1) {
             j++;
         }
 
