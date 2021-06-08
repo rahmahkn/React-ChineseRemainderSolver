@@ -1,14 +1,14 @@
 .div-form{
-    width:200px;
-    height:300px;
+    width: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 20px auto;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
-    padding: 20px;
-    margin-top: 10vh;
+    padding: 10px;
+    margin-top: 2vh;
     background-color: white;
 } 
 
@@ -18,8 +18,9 @@
     align-self: center;
 }
 
-input{
-    width: 95%;
+input {
+    width: 90%;
+    margin: 0 auto;
     border: 1px solid #dbdbdb;
     padding: 5px;
     margin: 2px 0;
@@ -29,7 +30,7 @@ input{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-button{
+button {
     width: 100%;
     margin: 5px 0;
     background-color: dodgerblue;
@@ -39,4 +40,9 @@ button{
     border: none;
     color: white;
     border-radius: 5px;
+}
+
+.custom-button {
+    margin: 1vh auto; 
+    width: 50px !important;
 }

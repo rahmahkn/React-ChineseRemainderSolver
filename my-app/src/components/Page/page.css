@@ -1,0 +1,22 @@
+.div-page{
+    width: 800px;
+    /* height:500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10vh;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+.custom-submit-button {
+    margin: 0 auto;
+    width: 500px !important;
+}

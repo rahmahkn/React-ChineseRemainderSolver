@@ -9,7 +9,6 @@ class Form extends React.Component {
         this.handleDividerChange = this.handleDividerChange.bind(this);
         this.handleRemainderChange = this.handleRemainderChange.bind(this);
         this.handleAddSubmit = this.handleAddSubmit.bind(this);
-        this.handleCalculateSubmit = this.handleCalculateSubmit.bind(this);
     }
     
     handleDividerChange(event) {
@@ -48,25 +47,28 @@ class Form extends React.Component {
         if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
             newList.push([this.state.divider, this.state.remainder]);
             this.setState({lists: newList});
+            this.setState({divider: '', remainder: ''});
         }
-    }
-
-    handleCalculateSubmit(event) {
-        alert('Smallest integer: ' + Process.chineseSolution(this.state.lists));
     }
 
     render() {
         return (
             <div className='div-form'>
-                <form onSubmit={this.handleCalculateSubmit}>
-                    <input type='number' name='divider' value={this.state.divider} placeholder='Divider' onChange={this.handleDividerChange}/>
-                    <input type='number' name='remainder' value={this.state.remainder} placeholder='Remainder' onChange={this.handleRemainderChange}/>
-                    <div className='div-form-logo' onClick={this.handleAddSubmit}>
-                        <p>Add</p>;
+                <div className='container'>
+                    <div className='row justify-content-center'>
+                        <form onSubmit={() => this.props.alertResult(this.state.lists)}>
+                            <input type='number' name='divider' value={this.state.divider} placeholder='Which when divided by' onChange={this.handleDividerChange}/>
+                            <input type='number' name='remainder' value={this.state.remainder} placeholder='Leaves remainder' onChange={this.handleRemainderChange}/>
+                            
+                            <input type='button' className='btn btn-primary custom-button d-flex justify-content-center' value='+' onClick={this.handleAddSubmit}/>
+
+                            <button>What number is it?</button>
+                        </form>
                     </div>
-                    <button onSubmit={this.handleCalculateSubmit}>Find the Smallest Integer</button>
-                </form>
+                </div>
+
                 <p>{this.state.lists}</p>
+                
             </div>
         )
     }

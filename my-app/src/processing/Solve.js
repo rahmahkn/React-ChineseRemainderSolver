@@ -43,6 +43,25 @@ export function chineseSolution(list_of_n_r) {
     return result % multipleAll(list_of_n_r);
 }
 
+export function chineseStep(list_of_n_r) {
+    let m = multipleAll(list_of_n_r);
+    var arr_y = chineseLists(list_of_n_r).arr_y;
+    var arr_M = chineseLists(list_of_n_r).arr_M;
+
+    var toHtml = '';
+    toHtml += "<p>"+m+"</p>";
+
+    for (var M in arr_M) {
+        toHtml += "<p>"+M+"</p>";
+    }
+
+    for (var y in arr_y) {
+        toHtml += "<p>"+y+"</p>";
+    }
+
+    return toHtml;
+}
+
 // var l = [];
 // var l1 = [5,3];
 // var l2 = [7,5];

@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import '.'
-import Form from './components/Form/Form'
+import Page from './components/Page/Page'
 
 function App() {
   return (
@@ -21,7 +21,15 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <Form></Form>
+    <div className="container-fluid">
+      <nav className="navbar navbar-light bg-light">
+        <a className="navbar-brand">Chinese Remainder Solver</a>
+      </nav>
+
+      <Page></Page>
+    </div>
+
+
     
   );
 }
