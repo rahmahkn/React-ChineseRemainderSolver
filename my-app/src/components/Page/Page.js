@@ -34,18 +34,18 @@ class Page extends React.Component {
             <h1>General Solution</h1>
             <p>In general, solution for linear congruence system is</p>
             <div className='general-center'>
-                <p>
-                <b>x = a<sub>1</sub>M<sub>1</sub>y<sub>1</sub> +
-                a<sub>2</sub>M<sub>2</sub>y<sub>2</sub> +
-                a<sub>3</sub>M<sub>3</sub>y<sub>3</sub> + ... +
-                a<sub>n</sub>M<sub>n</sub>y<sub>n</sub>
-                </b>
-                </p>
+              <p>
+              <b>x = a<sub>1</sub>M<sub>1</sub>y<sub>1</sub> +
+              a<sub>2</sub>M<sub>2</sub>y<sub>2</sub> +
+              a<sub>3</sub>M<sub>3</sub>y<sub>3</sub> + ... +
+              a<sub>n</sub>M<sub>n</sub>y<sub>n</sub>
+              </b>
+              </p>
 
-                <p>with:</p>
-                <p>M<sub>k</sub> is multiplication of all modulus, except m<sub>k</sub></p>
-                <p>y<sub>k</sub> is inversion of M<sub>k</sub> in modulus m<sub>k</sub></p>
-              </div>
+              <p>with:</p>
+              <p>M<sub>k</sub> is multiplication of all modulus, except m<sub>k</sub></p>
+              <p>y<sub>k</sub> is inversion of M<sub>k</sub> in modulus m<sub>k</sub></p>
+            </div>
             {this.state.result}
           </div>
           : ''}
