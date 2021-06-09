@@ -29,16 +29,17 @@ class Page extends React.Component {
           <Form alertResult={(listFromForm) => this.alertResult(listFromForm)} />
         </div>
 
-        {this.state.showResult ?
+        {this.state.showResult 
+          ?
           <div className='div-page'>
             <h1>General Solution</h1>
             <p>In general, solution for linear congruence system is</p>
             <div className='general-center'>
               <p>
                 <b>x = a<sub>1</sub>M<sub>1</sub>y<sub>1</sub> +
-                a<sub>2</sub>M<sub>2</sub>y<sub>2</sub> +
-                a<sub>3</sub>M<sub>3</sub>y<sub>3</sub> + ... +
-                a<sub>n</sub>M<sub>n</sub>y<sub>n</sub>
+                  a<sub>2</sub>M<sub>2</sub>y<sub>2</sub> +
+                  a<sub>3</sub>M<sub>3</sub>y<sub>3</sub> + ... +
+                  a<sub>n</sub>M<sub>n</sub>y<sub>n</sub>
                 </b>
               </p>
 
