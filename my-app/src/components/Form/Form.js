@@ -1,6 +1,5 @@
 import React from 'react';
 import './form.css';
-import * as Process from '../../processing/Solve';
 
 class Form extends React.Component {
     constructor(props) {
@@ -41,13 +40,16 @@ class Form extends React.Component {
         this.setState({remainder: parseInt(event.target.value)});
     }
 
-    handleAddSubmit(event) {
-        alert('Input: ' + this.state.divider + this.state.remainder );
+    handleAddSubmit() {
         var newList = this.state.lists;
-        if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
-            newList.push([this.state.divider, this.state.remainder]);
-            this.setState({lists: newList});
-            this.setState({divider: '', remainder: ''});
+        if (this.state.divider === '' || this.state.remainder === '') {
+            alert('Input is not completed!');
+        } else {
+            if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
+                newList.push([this.state.divider, this.state.remainder]);
+                this.setState({lists: newList});
+                this.setState({divider: '', remainder: ''});
+            }
         }
     }
 

@@ -18,9 +18,12 @@
     align-self: center;
 }
 
+form {
+    text-align: center;
+}
+
 input {
     width: 90%;
-    margin: 0 auto;
     border: 1px solid #dbdbdb;
     padding: 5px;
     margin: 2px 0;

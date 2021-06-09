@@ -7,18 +7,18 @@ export function chineseStep(list_of_n_r) {
     const array_y = Solve.chineseLists(list_of_n_r).arr_y;
     const array_M = Solve.chineseLists(list_of_n_r).arr_M;
 
-    var steps = '<div><h1>Linear Congruence System</h1>';
+    var steps = '<br><h1>Problem Solution</h1><h3>Linear Congruence System</h3>';
 
     var count = 1;
     for (let n_r of list_of_n_r) {
-        steps += ('<p>x ≡ ' + n_r[1] + ' (mod ' + n_r[0] + '); a<sub>'+count+'</sub> = ' + n_r[1] + '</p>');
+        steps += ('<p>x ≡ ' + n_r[1] + ' (mod ' + n_r[0] + '); a<sub>'+count+'</sub> = ' + n_r[1] + '; m<sub>'+count+'</sub> = ' + n_r[0] +'</p>');
         count++;
     }
 
-    steps += '<h1>Calculate m</h1>';
+    steps += '<br><h3>Calculate m</h3>';
     steps += ('<p>m = '+howCalculated(list_of_n_r, "M", count-1)+' = '+m+'</p>');
 
-    steps += '<h1>Calculate M</h1>';
+    steps += '<br><h3>Calculate M</h3>';
     count = 1;
     for (let M of array_M) {
         steps += ('<p>M<sub>'+count+'</sub> = '+howCalculated(list_of_n_r, "M", count-1)+' = '+M+'</p>');
@@ -26,13 +26,13 @@ export function chineseStep(list_of_n_r) {
     }
 
     count = 1;
-    steps += '<h1>Calculate y</h1>';
+    steps += '<br><h3>Calculate y</h3>';
     for (let y of array_y) {
         steps += ('<p>y<sub>'+count+'</sub> = '+y+' because '+array_M[count-1]+' · '+y+' ≡ 1 (mod '+list_of_n_r[count-1][0]+')</p>');
         count++;
     }
 
-    steps += '<h1>Result</h1><p>x = ';
+    steps += '<br><h3>Result</h3><p>x = ';
     for (var i=0; i<list_of_n_r.length; i++) {
         steps += list_of_n_r[i][1] + ' · ' + array_M[i] + ' · ' + array_y[i];
 
