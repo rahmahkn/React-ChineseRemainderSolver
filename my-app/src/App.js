@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import '.'
 import Page from './components/Page/Page'
