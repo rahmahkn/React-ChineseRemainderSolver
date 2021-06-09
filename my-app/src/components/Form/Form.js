@@ -56,19 +56,14 @@ class Form extends React.Component {
             <div className='div-form'>
                 <div className='container'>
                     <div className='row justify-content-center'>
-                        <form onSubmit={() => this.props.alertResult(this.state.lists)}>
+                        <form onSubmit={e => {e.preventDefault(); this.props.alertResult(this.state.lists)}}>
                             <input type='number' name='divider' value={this.state.divider} placeholder='Which when divided by' onChange={this.handleDividerChange}/>
                             <input type='number' name='remainder' value={this.state.remainder} placeholder='Leaves remainder' onChange={this.handleRemainderChange}/>
-                            
                             <input type='button' className='btn btn-primary custom-button d-flex justify-content-center' value='+' onClick={this.handleAddSubmit}/>
-
                             <button>What number is it?</button>
                         </form>
                     </div>
-                </div>
-
-                <p>{this.state.lists}</p>
-                
+                </div>                
             </div>
         )
     }
