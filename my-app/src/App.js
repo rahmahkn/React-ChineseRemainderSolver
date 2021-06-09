@@ -1,20 +1,20 @@
-import './App.css';
+import './App.css'
 import '.'
 import Page from './components/Page/Page'
 
-function App() {
+function App () {
   return (
     <div>
-      <nav className="navbar navbar-light bg-light">
-        <a className="navbar-brand">
+      <nav className='navbar navbar-light bg-light'>
+        <a className='navbar-brand'>
           Chinese Remainder Solver
         </a>
       </nav>
-      <div className="container-fluid">
-        <Page></Page>
+      <div className='container-fluid'>
+        <Page />
       </div>
-    </div> 
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App
