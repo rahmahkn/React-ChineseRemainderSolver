@@ -55,13 +55,20 @@ button {
   background-color: #bb371a;
   border-color: #bb371a;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
   color: #fff;
   background-color: #eba83a;
   border-color: #eba83a;
 }
 
-button:hover, button:focus, button:active, button.active {
+button:hover,
+button:focus,
+button:active,
+button.active {
   color: #fff;
   background-color: #eba83a;
   border-color: #eba83a;
