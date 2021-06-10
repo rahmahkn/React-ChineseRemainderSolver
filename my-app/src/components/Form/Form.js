@@ -56,11 +56,11 @@ class Form extends React.Component {
   dividerExist (n) {
     for (const nr of this.state.lists) {
       if (nr[0] === n) {
-        return true;
+        return true
       }
     }
 
-    return false;
+    return false
   }
 
   render () {
