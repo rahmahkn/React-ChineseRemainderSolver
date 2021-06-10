@@ -53,16 +53,16 @@ button {
 .btn-primary {
   color: #fff;
   background-color: #bb371a;
-  border-color: #bb371a; /*set the color you want here*/
+  border-color: #bb371a;
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
   color: #fff;
   background-color: #eba83a;
-  border-color: #eba83a; /*set the color you want here*/
+  border-color: #eba83a;
 }
 
-button:hover, button:focus, button:active, button.active, .open>.dropdown-toggle.button {
+button:hover, button:focus, button:active, button.active {
   color: #fff;
   background-color: #eba83a;
-  border-color: #eba83a; /*set the color you want here*/
+  border-color: #eba83a;
 }
