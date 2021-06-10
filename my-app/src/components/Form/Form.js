@@ -42,8 +42,8 @@ class Form extends React.Component {
 
   handleAddSubmit () {
     const newList = this.state.lists
-    if (this.state.divider === '' || this.state.remainder === '') {
-      alert('Input is not completed!')
+    if (this.state.divider === '' || this.state.remainder === '' || this.dividerExist(this.state.divider)) {
+      alert('Your input is not valid!')
     } else {
       if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
         newList.push([this.state.divider, this.state.remainder])
@@ -51,6 +51,16 @@ class Form extends React.Component {
         this.setState({ divider: '', remainder: '' })
       }
     }
+  }
+
+  dividerExist (n) {
+    for (let nr of this.state.lists) {
+      if (nr[0] === n) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   render () {
