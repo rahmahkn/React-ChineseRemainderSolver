@@ -8,16 +8,23 @@
   border-radius: 5px;
   padding: 20px;
   margin-top: 5vh;
-  background-color: white;
+  background-color: #fff8d9;
+}
+
+h1 {
+  color: #bb371a;
+  text-decoration: underline;
 }
 
 h2 {
   text-align: center;
+  color: #bb371a;
 }
 
 .custom-submit-button {
   margin: 0 auto;
   width: 500px !important;
+  background-color: #bb371a !important;
 }
 
 .general-center {

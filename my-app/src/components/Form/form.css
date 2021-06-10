@@ -36,7 +36,7 @@ input {
 button {
   width: 100%;
   margin: 5px 0;
-  background-color: dodgerblue;
+  background-color: #bb371a;
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 5px;
   font-weight: 600;
@@ -48,4 +48,21 @@ button {
 .custom-button {
   margin: 1vh auto;
   width: 50px !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #bb371a;
+  border-color: #bb371a; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #eba83a;
+  border-color: #eba83a; /*set the color you want here*/
+}
+
+button:hover, button:focus, button:active, button.active, .open>.dropdown-toggle.button {
+  color: #fff;
+  background-color: #eba83a;
+  border-color: #eba83a; /*set the color you want here*/
 }

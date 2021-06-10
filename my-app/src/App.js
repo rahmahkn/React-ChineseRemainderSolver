@@ -4,8 +4,8 @@ import Page from './components/Page/Page'
 
 function App () {
   return (
-    <div>
-      <nav className='navbar navbar-light bg-light'>
+    <div className='App'>
+      <nav className='navbar navbar-light bg-light navbar-custom'>
         <a className='navbar-brand'>
           Chinese Remainder Solver
         </a>
