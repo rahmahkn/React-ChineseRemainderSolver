@@ -12,6 +12,7 @@ This project is a web application using ReactJS that can solve Chinese Remainder
 5. Kindly repeat step 4 if you want to add more dividers and remainders
 6. Find the smallest number that is satisfied the dividers and remainders inputted before by clicking <b>What number is it?</b>
 7. The solution will be displayed
+8. If you want to solve another problem, just refresh the page
 
 ## Status
 Completed on June 10th, 2021
