@@ -44,22 +44,28 @@ class Form extends React.Component {
     const newList = this.state.lists
     if (this.state.divider === '' || this.state.remainder === '' || this.dividerExist(this.state.divider)) {
       alert('Your input is not valid!')
+      this.setState({ divider: '', remainder: '' })
+
     } else {
       if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
         newList.push([this.state.divider, this.state.remainder])
-        this.setState({lists: newList, divider: '', remainder: '' })
+        this.setState({ lists: newList, divider: '', remainder: '' })
       }
     }
   }
 
   dividerExist (n) {
-    for (const nr of this.state.lists) {
-      if (nr[0] === n) {
-        return true
+    if (n === '') {
+      return true
+    } else {
+      for (const nr of this.state.lists) {
+        if (nr[0] === n) {
+          return true
+        }
       }
-    }
 
-    return false
+      return false
+    }
   }
 
   render () {
