@@ -47,8 +47,7 @@ class Form extends React.Component {
     } else {
       if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
         newList.push([this.state.divider, this.state.remainder])
-        this.setState({ lists: newList })
-        this.setState({ divider: '', remainder: '' })
+        this.setState({lists: newList, divider: '', remainder: '' })
       }
     }
   }
@@ -72,7 +71,7 @@ class Form extends React.Component {
               <input type='number' name='divider' value={this.state.divider} placeholder='Which when divided by' onChange={this.handleDividerChange} />
               <input type='number' name='remainder' value={this.state.remainder} placeholder='Leaves remainder' onChange={this.handleRemainderChange} />
               <input type='button' className='btn btn-primary custom-button d-flex justify-content-center' value='+' onClick={this.handleAddSubmit} />
-              <button>What number is it?</button>
+              <button type='submit'>What number is it?</button>
             </form>
           </div>
         </div>

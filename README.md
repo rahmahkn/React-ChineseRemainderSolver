@@ -5,17 +5,18 @@ This project is a web application using ReactJS that can solve Chinese Remainder
 * ReactJS with libraries: `react-html-parser, react-bootstrap`
 
 ## How to Run
-1. Go to `my-app` folder
-2. Run `npm start`
-3. The website will be running at `http://localhost:3000/`
-4. Input the divider and remainder, then click <b>+</b> button
-5. Kindly repeat step 4 if you want to add more dividers and remainders
-6. Find the smallest number that is satisfied the dividers and remainders inputted before by clicking <b>What number is it?</b>
-7. The solution will be displayed
-8. If you want to solve another problem, just refresh the page
+1. Go to `my-app` folder 
+2. Install all dependencies by runnig `npm install`
+3. Run `npm start`
+4. The website will be running at `http://localhost:3000/`
+5. Input the divider and remainder, then double-click `+` button
+6. Repeat step 5 if you want to add more dividers and remainders
+7. Find the smallest number that is satisfied the dividers and remainders inputted before by double-clicking `What number is it?`
+8. The solution will be displayed
+9. If you want to solve another problem, just refresh the page
 
 ## Status
-Completed on June 10th, 2021
+Completed on June 23, 2021
 
 ## Author
 Rahmah Khoirussyifa' Nurdini
