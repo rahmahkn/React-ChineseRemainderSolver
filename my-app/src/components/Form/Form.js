@@ -45,7 +45,6 @@ class Form extends React.Component {
     if (this.state.divider === '' || this.state.remainder === '' || this.dividerExist(this.state.divider)) {
       alert('Your input is not valid!')
       this.setState({ divider: '', remainder: '' })
-
     } else {
       if (this.state.lists.indexOf([this.state.divider, this.state.remainder]) === -1) {
         newList.push([this.state.divider, this.state.remainder])
