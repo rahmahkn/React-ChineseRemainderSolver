@@ -6,7 +6,7 @@ This project is a web application using ReactJS that can solve Chinese Remainder
 
 ## How to Run
 1. Go to `my-app` folder
-2. Install all dependencies by runnig `npm install`
+2. Install all dependencies by running `npm install`
 3. Start the website by running `npm start`
 4. The website will be running at `http://localhost:3000/`
 5. Input the divider and remainder, then click `+` button
